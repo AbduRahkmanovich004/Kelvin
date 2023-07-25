@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("../font/Inter-VariableFont_slnt,wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  border: none;
+  user-select: none;
+}
+
+header,
+nav,
+section,
+footer {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  background: #121120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: auto 20px;
+}
+
+.drop {
+  display: none;
+}
+
+header nav {
+  margin-top: 20px;
+  width: 100%;
+}
+header nav .ochiq {
+  display: none;
+}
+header nav input {
+  display: none;
+}
+header nav .container {
+  padding: 0 15px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .container .logo {
+  padding: 12px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  height: 54px;
+}
+header nav .container .rLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+header nav .container .rLogo a {
+  color: #f5f5f5;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+header nav .container .rLogo button {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  width: 181px;
+  height: 51px;
+  border-radius: 8px;
+  background: rgba(130, 130, 138, 0.2);
+  border: none;
+}
+header .home {
+  background-image: url("../img/bg1.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+header .home .container {
+  padding-bottom: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+header .home .container h2 {
+  margin-top: 26px;
+  color: #f5f5f5;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+header .home .container .prof {
+  margin-top: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+  background: linear-gradient(transparent, rgba(44, 39, 39, 0.747));
+  width: 154px;
+  height: 154px;
+  position: relative;
+}
+header .home .container .prof p {
+  bottom: -15px;
+  position: absolute;
+}
+header .home .container h1 {
+  margin-top: 80px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 13.3769025803px 0px rgba(0, 0, 0, 0.055);
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100.5%;
+  letter-spacing: 1.92px;
+}
+header .home .container .blur {
+  position: absolute;
+  top: 150px;
+}
+
+.logos {
+  margin-top: 40px;
+}
+.logos .container {
+  max-width: 970px;
+  text-align: center;
+}
+.logos .container h4 {
+  color: #f5f5f5;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.logos .container p {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 88px;
+}
+
+.screen {
+  margin-top: 120px;
+}
+.screen .container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1334px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.screen .container .card {
+  max-width: 434px;
+  border-radius: 8px;
+  background: rgba(131, 130, 138, 0.2);
+  padding: 20px 18px;
+}
+.screen .container .card .profi {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+.screen .container .card .profi .fio h4 {
+  color: #f5f5f5;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 127.023%;
+}
+.screen .container .card .profi .fio p {
+  color: #707586;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 127.023%;
+}
+
+@media screen and (max-width: 924px) and (min-width: 700px) {
+  .screen .container .card {
+    max-width: 590px;
+  }
+  .screen .container .card .imgeb {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 695px) {
+  header nav .ochiq {
+    display: block;
+  }
+  header nav .main {
+    position: absolute;
+    flex-direction: column;
+  }
+  header .home .container h2 {
+    font-size: 32px;
+  }
+  header .home .container h1 {
+    font-size: 66px;
+  }
+}
+@media screen and (max-width: 530px) {
+  header nav .container {
+    margin: auto 20px;
+  }
+  header nav .container .drop {
+    font-size: 40px;
+    display: block;
+    position: absolute;
+    background: rgba(51, 51, 49, 0.527);
+    right: 20px;
+    top: 10px;
+    z-index: 4;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0.7;
+  }
+  header nav .container input:checked + .rLogo {
+    width: 150px;
+    height: 200px;
+    opacity: 1;
+  }
+  header nav .container .rLogo {
+    transition: width 0.3s opacity 0.2s;
+    position: absolute;
+    flex-direction: column;
+    background: rgb(39, 50, 80);
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: 10px;
+    border-radius: 20px;
+    opacity: 0;
+    z-index: 2;
+    overflow: hidden;
+  }
+  header nav .container .rLogo button {
+    width: 95%;
+  }
+  header .home .container h2 {
+    font-size: 25px;
+  }
+  header .home .container h1 {
+    font-size: 50px;
+  }
+  .logos .container h4 {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .logos .container p {
+    font-size: 12px;
+  }
+  .screen .container .card {
+    max-width: 590px;
+  }
+  .screen .container .card .imgeb {
+    max-width: 300px;
+  }
+}/*# sourceMappingURL=main.css.map */
